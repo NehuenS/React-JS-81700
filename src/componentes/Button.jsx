@@ -3,7 +3,7 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 function Button(clickHandler, label, classes) {
     return (
         <>
-            <button class={classes} onClick={clickHandler}>{label}</button>
+            <button className={classes} onClick={clickHandler ?? false}>{label ?? ""}</button>
         </>
     )
 }

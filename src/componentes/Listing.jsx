@@ -1,31 +1,27 @@
 import '../../node_modules/bootstrap/dist/css/bootstrap.css';
-import Button from './Button';
+import { Button, Col } from 'react-bootstrap';
 
 
 function Listing({ nombre, precio, fotoURL, descripcion }) {
 
   return (
-    <div className="card row w-100">
-      <div className="col-4">
-        <img src={fotoURL} alt={"Foto de " + nombre} />
+    <>
+      <div className="card row align-items-center w-100 p-2">
+        <Col size="4">
+          <img className="w-100 h-100" src={fotoURL} alt={"Foto de " + nombre} />
+        </Col>
+
+        <Col ColSpec="8" className='p-3'>
+          <h4>{nombre}</h4>
+          <h5>{descripcion}</h5>
+          <p>${precio}</p>
+          <div className='d-inline'>
+            <Button>-</Button>
+            <Button>+</Button>
+          </div>
+        </Col>
       </div>
-      <div className="col-1 h-100"></div>
-      <div className="col-7">
-        <h4>{nombre}</h4>
-        <h5>{descripcion}</h5>
-        <p>${precio}</p>
-        <Button
-          label="-"
-          classes="btn-danger"
-          clickHandler="false"
-        />
-        <Button
-          label="+"
-          classes="btn-success"
-          clickHandler="false"
-        />
-      </div>
-    </div>
+    </>
   )
 }
 
