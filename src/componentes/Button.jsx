@@ -1,11 +1,6 @@
-import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 
-function Button(clickHandler, label, classes) {
+export default function Button(properties) {
     return (
-        <>
-            <button className={classes} onClick={clickHandler ?? false}>{label ?? ""}</button>
-        </>
+        <button className={properties.classes} onClick={properties.clickHandler}>{properties.label}</button>
     )
 }
-
-export default Button;

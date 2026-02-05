@@ -1,5 +1,3 @@
-import '../../node_modules/bootstrap/dist/css/bootstrap.css';
-import { Button, Col } from 'react-bootstrap';
 
 
 function Listing({ nombre, precio, fotoURL, descripcion }) {
