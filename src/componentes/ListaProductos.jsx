@@ -1,11 +1,11 @@
 
-import Producto from "./Producto"
+import Producto from "./Producto.jsx"
 import { getProductos, getCategoria } from '../database/firestore'
 import { useEffect, useState } from "react"
 import { useParams } from "react-router"
 
 
-export default function ProductoListContainer(props) {
+export default function ProductoListContainer() {
   const [products, setProducts] = useState([]);
 
   const { categoriaId } = useParams();
@@ -23,13 +23,13 @@ export default function ProductoListContainer(props) {
 
   return (
     <section className="Producto-list-container">
-      <h2>Hola, bienvenidos a mi tienda {props.greeting} </h2>
+      <h2>Toda La Onda</h2>
       <div className="Productolist">
         {
           products.map(
-            (Producto) => <Producto
-              key={Producto.id}
-              {...Producto} // spread
+            (producto) => <Producto
+              key={producto.id}
+              {...producto} // spread
             />
           )
         }
