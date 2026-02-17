@@ -6,7 +6,7 @@ export default function NavBar() {
     { "key": "mascaras", "label": "Máscaras" },
     { "key": "protector", "label": "Protectores Térmicos" },
     { "key": "serum", "label": "Sérums" },
-    { "key": "cepillo", "label": "Cepillos" },
+    { "key": "cepillo", "label": "Cepillos" }
   ];
   return (
     <nav>

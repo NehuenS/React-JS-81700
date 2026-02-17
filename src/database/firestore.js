@@ -67,4 +67,4 @@ export async function exportProductsToFirestore() {
     })
 }
 
-exportProductsToFirestore();
+// exportProductsToFirestore();
