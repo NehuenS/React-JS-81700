@@ -1,7 +1,6 @@
 import { Link } from "react-router"
 
 export default function Producto({ id, categoria, descripcion, image, nombre, precio, stock }) {
-  console.log(id);
   return (
     <div className="item-card">
       <img src={image} alt={nombre} />

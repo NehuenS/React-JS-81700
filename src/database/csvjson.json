@@ -1,0 +1,106 @@
+[
+  {
+    "nombre": "Máscara Capilar Fidelité Caviar 1Kg",
+    "precio": 11000,
+    "stock": 12,
+    "descripcion": "Máscara Capilar Caviar Hidro-nutritiva Fidelite con D-Pantenol, el extracto de caviar y las proteínas de arroz, trigo, soja y seda. Presentación 1 Kg.",
+    "categoria": "mascaras",
+    "image": "./src/assets/productos/mascara-capilar-caviar-hidro-nutritiva-fidelite-1kg.jpeg"
+  },
+  {
+    "nombre": "Fidelité Renovación Máscara Capilar Coco Y Vainilla 1Kg",
+    "precio": 11181,
+    "stock": 12,
+    "descripcion": "Máscara capilar coco y vainilla fidelite x kg reestructura y promueve la renovacion capilar. Remueve los residuos y renueva el cabello, dejandolo sedoso, radiante y con una exquisita fragancia. Contiene filtros UV.",
+    "categoria": "mascaras",
+    "image": "./src/assets/productos/mascara-fidelite-coco-vainilla.jpeg"
+  },
+  {
+    "nombre": "Máscara Fidelité Argán nutrición 1kg",
+    "precio": 14094,
+    "stock": 12,
+    "descripcion": "Es para todo tipo de cabellos. Está hecha a base de aceite virgen de Argán. Es un tratamiento anti-age que combate y retarda el envejecimiento capilar. Otorga hidratación profunda y nutrición intensa. Devuelve la vitalidad perdida al cabello proporcionando una textura ligera y un increíble brillo instantáneo. Posee filtro UV que protege al cabello de los rayos ultravioleta. Anti-frizz.",
+    "categoria": "mascaras",
+    "image": "./src/assets/productos/Mascara-Fidelite-Argan.jpeg"
+  },
+  {
+    "nombre": "Mascara Capilar Hidratacion Profunda 1000g Fidelite Almendra 1k",
+    "precio": 11000,
+    "stock": 12,
+    "descripcion": "El baño de crema Almendras - Fidelite es una excelente mascara capilar que promueve la Hidratacion y restauracion capilar brindando una excelente nutricion, sedosidad y brillo al cabello. Posee filtros UV cuidando de los rayos solares del dia a dia. Anti Frizz.",
+    "categoria": "mascaras",
+    "image": "./src/assets/productos/mascara-capilar-keratina.jpeg"
+  },
+  {
+    "nombre": "Protector Térmico Para Cabello 10 En 1 Opción X200 Ml",
+    "precio": 9500,
+    "stock": 24,
+    "descripcion": "El protector térmico OPCIÓN, enriquecido con queratina vegetal y glicerina, está formulado para tratar todos los tipos y necesidades del cabello, con tecnología 3X Protection System, preserva al cabello del color, calor y sol, ya que contiene filtro solar.",
+    "categoria": "protector",
+    "image": "./src/assets/productos/Protector-Termico-Opcion.jpeg"
+  },
+  {
+    "nombre": "Han Protector Térmico Acido Hialuronico Brillo Pelo Local",
+    "precio": 9100,
+    "stock": 24,
+    "descripcion": "Han Protector Térmico Con Acido Hialuronico, un producto esencial para mantener la salud y apariencia de tu cabello. Al aplicar calor, como secadores, planchas o rizadores. Crea una barrera protectora entre la fibra capilar y el calor. Previene que el cabello se queme, deshidrate y pierda el brillo.",
+    "categoria": "protector",
+    "image": "./src/assets/productos/Han-Protector-Termico.jpeg"
+  },
+  {
+    "nombre": "Protector Térmico Fuerza Reparación Molecular Lumina 150 Ml",
+    "precio": 17900,
+    "stock": 24,
+    "descripcion": "Cuidado intensivo para tu cabello Protege el cabello del calor de secadoras y planchas, fortaleciendo al mismo tiempo la fibra capilar. Este protector térmico forma una barrera que resguarda el cabello del daño causado por herramientas de calor. Su fórmula enriquecida fortalece el cabello, previene el quiebre y mantiene el peinado por más tiempo",
+    "categoria": "protector",
+    "image": "./src/assets/productos/protector-termico-lumina.jpeg"
+  },
+  {
+    "nombre": "Serum Oleo Extraordinario Elixir Argan Reparador - Fidelite",
+    "precio": 14600,
+    "stock": 24,
+    "descripcion": "Oleo Supremo de Argan By Fidelite. Este serum sale de lo común y conocido, aporta gran luminosidad y brillo al cabello mientras lo nutre gracias a sus activos minerales, vitamina E y aciete virgen de argan.",
+    "categoria": "serum",
+    "image": "./src/assets/productos/Serum-oleo-elixir-fidelite.jpeg"
+  },
+  {
+    "nombre": "Óleo Extraordinario Reparación de Puntas L'Oréal Elvive 100Ml",
+    "precio": 16630,
+    "stock": 24,
+    "descripcion": "El Oleo Extraordinario transforma el pelo seco llenándolo de vida, luciendo sublime en todos sus aspectos. Su textura ligera enriquecida con extracto de 6 oleos de flores preciosas se funde en el pelo para revitalizar la estructura capilar, lograr un brillo extraordinario y una suavidad infinita.",
+    "categoria": "serum",
+    "image": "./src/assets/productos/Oleo-Extraordinario-LOreal-Elvive.jpeg"
+  },
+  {
+    "nombre": "Óleo Karseell Regenerador Sérum De Aceite De Argán Original.",
+    "precio": 23260,
+    "stock": 24,
+    "descripcion": "Sérum de Aceite de Argán El Karseell Oil Maca Essence es un suero capilar diseñado para nutrir, reparar y revitalizar el cabello en profundidad. Su fórmula, enriquecida con una combinación de ingredientes naturales como el aceite de argán y la esencia de maca, transforma el cabello seco y dañado en una melena suave, brillante y manejable desde la primera aplicación. El aceite de argán es conocido por sus poderosas propiedades hidratantes y reparadoras.",
+    "categoria": "serum",
+    "image": "./src/assets/productos/oleo-karsell-argan.jpeg"
+  },
+  {
+    "nombre": "Óleo + Sérum Bifasico Bond Intense Repair 110 Ml Dove",
+    "precio": 11325,
+    "stock": 24,
+    "descripcion": "Este producto combina una tecnología patentada con un 7% de Péptido Complex, ofreciendo una nutrición profunda y realzando la vitalidad del cabello. Su textura ultra liviana facilita su aplicación y rápida absorción sin dejar residuos grasos, y su fórmula bifásica proporciona un doble poder renovador, haciendo que el cabello se sienta más fuerte y saludable desde el primer uso.",
+    "categoria": "serum",
+    "image": "./src/assets/productos/Oleo-Serum-Bifasico-Dove.jpeg"
+  },
+  {
+    "nombre": "Cepillo De Pelo Tangle Teezer Easy Dry & Go Rosa",
+    "precio": 25000,
+    "stock": 10,
+    "descripcion": "Este cepillo ligero Easy Dry & Go es la última innovación de Tangle Teezer, que hace que el secado con secador sea rápido y fácil. La tecnología de cerdas patentada y su forma única secan el cabello rápidamente y brindan volumen, rebote y suavidad naturales. Las cerdas y las salidas de aire funcionan juntas para crear una apariencia sin frizz que es fácil de secar.",
+    "categoria": "cepillo",
+    "image": "./src/assets/productos/cepillo-tangle-teezer-rosa.jpeg"
+  },
+  {
+    "nombre": "Cepillo Desenredante Tangle Teezer Blow Styling Full Paddle",
+    "precio": 38700,
+    "stock": 10,
+    "descripcion": "Cepillo Desenredante Tangle Teezer Blow Styling Full Paddle. Una herramienta innovadora que lleva el cabello de mojado a seco. Tangle Teezer Blow Styling tiene cerdas de base fija que se han diseñado para brindar un increíble estilo de brushing rápido y suave.",
+    "categoria": "cepillo",
+    "image": "./src/assets/productos/cepillo-tangle-teezer-blow-styling.jpeg"
+  }
+]

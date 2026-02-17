@@ -6,18 +6,16 @@ import { useParams } from "react-router"
 
 
 export default function ProductoListContainer() {
-  const [products, setProducts] = useState([]);
+  const [productos, setProductos] = useState([]);
 
   const { categoriaId } = useParams();
-  console.log(categoriaId)
-
 
   useEffect(() => {
     if (categoriaId) {
-      getCategoria(categoriaId).then(respuesta => setProducts(respuesta))
+      getCategoria(categoriaId).then(respuesta => setProductos(respuesta))
     }
     else {
-      getProductos().then(respuesta => setProducts(respuesta))
+      getProductos().then(respuesta => setProductos(respuesta))
     }
   }, [categoriaId])
 
@@ -26,10 +24,10 @@ export default function ProductoListContainer() {
       <h2>Toda La Onda</h2>
       <div className="Productolist">
         {
-          products.map(
+          productos.map(
             (producto) => <Producto
               key={producto.id}
-              {...producto} // spread
+              {...producto}
             />
           )
         }
