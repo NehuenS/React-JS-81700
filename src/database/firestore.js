@@ -58,13 +58,13 @@ export async function createOrdenDeCompra(ordenData) {
     alert(`¡Gracias por tu compra! Tu ticket id es: ${ordenRegistrada.id}`)
 }
 
-export async function exportProductsToFirestore() {
-    await fetch("./src/database/csvjson.json").then(c => c.json()).then(lista => {
-        for (let item of lista) {
-            const docRef = addDoc(coleccionProductos, item);
-            console.log("Doc creado:", docRef.id, "\nDetalles: ", item)
-        }
-    })
-}
+// export async function exportProductsToFirestore() {
+//     await fetch("./src/database/csvjson.json").then(c => c.json()).then(lista => {
+//         for (let item of lista) {
+//             const docRef = addDoc(coleccionProductos, item);
+//             console.log("Doc creado:", docRef.id, "\nDetalles: ", item)
+//         }
+//     })
+// }
 
 // exportProductsToFirestore();
