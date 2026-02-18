@@ -16,7 +16,7 @@ export default function NavBar() {
       <ul>
         {listaLinks.map((i) => (
           <li key={i.key}>
-            <NavLink to={"/category/" + i.key}>{i.label}</NavLink>
+            <NavLink to={"/categoria/" + i.key}>{i.label}</NavLink>
           </li>
         ))}
       </ul>
