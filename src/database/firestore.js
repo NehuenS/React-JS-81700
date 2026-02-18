@@ -4,10 +4,10 @@ import { addDoc, collection, doc, getDoc, getDocs, getFirestore, query, where } 
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_API_KEY,
-    authDomain: import.meta.env.VITE_AUTH_DOMAIN,
-    projectId: import.meta.env.VITE_PROJECT_ID,
-    storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
-    messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+    authDomain: "silva-reactjs-81700.firebaseapp.com",
+    projectId: "silva-reactjs-81700",
+    storageBucket: "silva-reactjs-81700.firebasestorage.app",
+    messagingSenderId: "114684066104",
     appId: import.meta.env.VITE_APP_ID
 };
 // console.log(firebaseConfig);
