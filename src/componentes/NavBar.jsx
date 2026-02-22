@@ -3,10 +3,11 @@ import { NavLink } from "react-router";
 
 export default function NavBar() {
   const listaLinks = [
-    { "key": "mascaras", "label": "Máscaras" },
-    { "key": "protector", "label": "Protectores Térmicos" },
-    { "key": "serum", "label": "Sérums" },
-    { "key": "cepillo", "label": "Cepillos" }
+    { "key": "mascaras", "label": "Máscaras", "enlace": "/categoria/mascaras" },
+    { "key": "protector", "label": "Protectores Térmicos", "enlace": "/categoria/protector" },
+    { "key": "serum", "label": "Sérums", "enlace": "/categoria/serum" },
+    { "key": "cepillo", "label": "Cepillos", "enlace": "/categoria/cepillo" },
+    { "key": "carrito", "label": "Carrito", "enlace": "/carrito" }
   ];
   return (
     <nav>
@@ -16,7 +17,7 @@ export default function NavBar() {
       <ul>
         {listaLinks.map((i) => (
           <li key={i.key}>
-            <NavLink to={"/categoria/" + i.key}>{i.label}</NavLink>
+            <NavLink to={i.enlace}>{i.label}</NavLink> 
           </li>
         ))}
       </ul>

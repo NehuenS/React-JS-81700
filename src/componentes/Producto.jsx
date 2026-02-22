@@ -1,24 +1,19 @@
 import { Link } from "react-router"
+import Boton from "./Boton"
 
-export default function Producto({ id, categoria, descripcion, image, nombre, precio, stock }) {
+export default function Producto({ id, descripcion, image, nombre, precio }) {
   return (
     <div className="item-card">
       <img src={image} alt={nombre} />
       <h3>{nombre}</h3>
-      <p>$ {precio}</p>
+      <h5>$ {precio}</h5>
+      <p>{
+        descripcion.length > 75 ? descripcion.substring(0, descripcion.indexOf(" ", 74)) + "..." : descripcion
+      }</p>
 
       <Link to={`/producto/${id}`}>
-        <button className="item-card-button">Ver producto</button>
+        <Boton clases="item-card-button" etiqueta="Ver producto" />
       </Link>
     </div>
-  )
-}
-
-export function ItemButton() {
-  return (
-    <>
-      <h2>Hola ItemButton</h2>
-      <button>Click aquí</button>
-    </>
   )
 }

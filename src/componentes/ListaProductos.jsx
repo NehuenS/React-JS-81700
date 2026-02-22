@@ -1,11 +1,11 @@
 
 import Producto from "./Producto.jsx"
-import { getProductos, getCategoria } from '../database/firestore'
+import { getProductos, getCategoria } from '../datos/firestore.js'
 import { useEffect, useState } from "react"
 import { useParams } from "react-router"
 
 
-export default function ProductoListContainer() {
+export default function ListaProductos() {
   const [productos, setProductos] = useState([]);
 
   const { categoriaId } = useParams();

@@ -10,7 +10,6 @@ const firebaseConfig = {
     messagingSenderId: "114684066104",
     appId: import.meta.env.VITE_APP_ID
 };
-// console.log(firebaseConfig);
 const app = initializeApp(firebaseConfig);
 const database = getFirestore(app);
 const coleccionProductos = collection(database, "/productos");
@@ -27,7 +26,6 @@ export async function getProductos() {
     const productos = productosRaw.docs.map(item => {
         return ({ ...item.data(), id: item.id });
     });
-    console.log("Devolviendo Productos: ", productos);
     return productos;
 }
 
@@ -62,7 +60,6 @@ export async function createOrdenDeCompra(ordenData) {
 //     await fetch("./src/database/csvjson.json").then(c => c.json()).then(lista => {
 //         for (let item of lista) {
 //             const docRef = addDoc(coleccionProductos, item);
-//             console.log("Doc creado:", docRef.id, "\nDetalles: ", item)
 //         }
 //     })
 // }
