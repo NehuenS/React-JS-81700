@@ -12,7 +12,7 @@ export default function NavBar() {
   return (
     <nav>
       <NavLink to="/">
-        <h2>TLD</h2>
+        <h2>Toda La Onda</h2>
       </NavLink>
       <ul>
         {listaLinks.map((i) => (

@@ -20,7 +20,7 @@ export default function App() {
           <Route path="*" element={
             <div>
               <h1>404: Página no encontrada</h1>
-              <Link to="/">Regresar al home</Link>
+              <Link to="/">Regresar al inicio</Link>
             </div>
           } />
         </Routes>
