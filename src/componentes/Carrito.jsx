@@ -3,7 +3,7 @@ import CarritoContexto from "../contexto/CarritoContexto"
 import { createOrdenDeCompra } from "../datos/firestore"
 
 export default function Carrito() {
-  const { carrito } = useContext(CarritoContexto);
+  const { carrito, totalCarrito, vaciarCarrito } = useContext(CarritoContexto);
   const [formData, setFormData] = useState({
     comprador: "",
     telefono: "",
@@ -18,6 +18,7 @@ export default function Carrito() {
       fecha: new Date()
     }
     createOrdenDeCompra(ordenDeCompra);
+    reinicializar();
   }
 
   function enviarForm(e) {
@@ -37,6 +38,7 @@ export default function Carrito() {
       telefono: "",
       email: ""
     });
+    vaciarCarrito();
   }
 
   return (
@@ -48,12 +50,12 @@ export default function Carrito() {
         carrito.lenth === 0
           ? (<h3>El carrito esta vacio</h3>)
           : (
-            Object.keys(carrito).forEach( producto =>
+            carrito.map(producto =>
             (<div key={producto.id}>
-              <h3>{producto.titulo}</h3>
-              <p>Precio unitario: {producto.precio}</p>
-              <p>Cantidad: {producto.cantidad}</p>
-              <p>Subtotal: {producto.precio * producto.cantidad}</p>
+              <h4>{producto.nombre}</h4>
+              <span>Precio unitario: {producto.precio}</span>
+              <span>Cantidad: {producto.cantidad}</span>
+              <span>Subtotal: {producto.precio * producto.cantidad}</span>
             </div>)
             )
           )

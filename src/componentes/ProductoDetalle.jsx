@@ -1,13 +1,14 @@
 
 // import Producto from "./Producto.jsx"
 import { getProducto } from '../datos/firestore.js'
-import { useEffect, useState } from "react"
+import { useEffect, useState, useContext } from "react"
 import { useParams } from "react-router"
-import Boton from './Boton.jsx';
-import CarritoContextoProvider from '../contexto/CarritoContexto.jsx';
+import CarritoContexto from "../contexto/CarritoContexto"
+import Contador from "./Contador"
 
 
 export default function ProductoDetalle() {
+  const { agregarACarrito } = useContext(CarritoContexto);
 
   const [producto, setProducto] = useState([]);
 
@@ -23,7 +24,7 @@ export default function ProductoDetalle() {
       <h3>{producto.nombre}</h3>
       <h5>$ {producto.precio}</h5>
       <p>{producto.descripcion}</p>
-      <Boton etiqueta="+" clickHandler="agregarACarrito()" />
+      <Contador onAgregar={(c) => agregarACarrito(producto, c)} />
     </div>
   )
 }

@@ -1,20 +1,23 @@
 import { createContext, useState } from "react";
 
-const CarritoContexto = createContext({ carrito: {} });
+const CarritoContexto = createContext({ carrito: [] });
 
 const CarritoContextoProvider = CarritoContexto.Provider;
 
 export function CarritoProvider({ children }) {
-  const [carrito, setCarrito] = useState({});
+  const [carrito, setCarrito] = useState([]);
 
   function agregarACarrito(producto, cantidad) {
     const nuevoCarrito = structuredClone(carrito);
-    nuevoCarrito[producto.id]= { ...producto, cantidad: cantidad }
-    //{id:{...producto, cantidad: ###}}
+    if (carrito.some(i => i.id === producto.id)) {
+      nuevoCarrito.find(i => i.id === producto.id).cantidad = cantidad;
+    } else {
+      nuevoCarrito.push({ ...producto, cantidad: cantidad });
+    }
     setCarrito(nuevoCarrito);
   }
 
-  function eliminarProducto (producto) {
+  function eliminarProducto(producto) {
     const nuevoCarrito = carrito.filter(i => i.id !== producto);
     setCarrito(nuevoCarrito);
   }
@@ -28,11 +31,11 @@ export function CarritoProvider({ children }) {
   }
 
   function vaciarCarrito() {
-    setCarrito({});
+    setCarrito([]);
   }
 
   return (
-    <CarritoContextoProvider value={{ carrito: carrito, agregarACarrito, eliminarProducto, productosEnCarrito, totalCarrito, vaciarCarrito}}>
+    <CarritoContextoProvider value={{ carrito: carrito, agregarACarrito, eliminarProducto, productosEnCarrito, totalCarrito, vaciarCarrito }}>
       {children}
     </CarritoContextoProvider>
   );
