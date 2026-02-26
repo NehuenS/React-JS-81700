@@ -1,11 +1,11 @@
 // import { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router';
-import ListaProductos from './componentes/ListaProductos.jsx';
-import "./App.css";
-import NavBar from './componentes/NavBar.jsx';
-import ProductoDetalle from './componentes/ProductoDetalle.jsx';
 import { CarritoProvider } from './contexto/CarritoContexto.jsx';
-import Carrito from "./componentes/Carrito.jsx"
+import NavBar from './componentes/NavBar.jsx';
+import ListaProductos from './componentes/ListaProductos.jsx';
+import ProductoDetalle from './componentes/ProductoDetalle.jsx';
+import Carrito from "./componentes/Carrito.jsx";
+import CarritoWidget from "./componentes/CarritoWidget.jsx";
 
 export default function App() {
   return (
@@ -24,6 +24,7 @@ export default function App() {
             </div>
           } />
         </Routes>
+        <CarritoWidget />
       </CarritoProvider>
     </BrowserRouter>
 

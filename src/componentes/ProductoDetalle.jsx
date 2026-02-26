@@ -19,12 +19,22 @@ export default function ProductoDetalle() {
   }, [productoId])
 
   return (
-    <div className="item-card">
-      <img src={producto.image} alt={producto.nombre} />
-      <h3>{producto.nombre}</h3>
-      <h5>$ {producto.precio}</h5>
-      <p>{producto.descripcion}</p>
-      <Contador onAgregar={(c) => agregarACarrito(producto, c)} />
+    <div className="container mt-4">
+      <div className="row justify-content-center">
+        <div className="col-md-8">
+          <div className="card">
+            <img src={producto.image} alt={producto.nombre} className="card-img-top img-fluid producto-detalle-foto" />
+            <div className="card-body">
+              <h3 className="card-title text-center">{producto.nombre}</h3>
+              <h4 className="card-text h6 text-center fw-bold fs-5">$ {producto.precio}</h4>
+              <p className="card-text flex-grow-1">{producto.descripcion}</p>
+              <div className="mt-3">
+                <Contador onAgregar={(c) => agregarACarrito(producto, c)} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

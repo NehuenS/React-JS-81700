@@ -20,15 +20,15 @@ export default function ListaProductos() {
   }, [categoriaId])
 
   return (
-    <section className="Producto-list-container">
-      <h2>Toda La Onda</h2>
-      <div className="Productolist">
+    <section className="container my-4">
+      <div className="row row-cols-1 row-cols-md-2 g-4">
         {
           productos.map(
-            (producto) => <Producto
-              key={producto.id}
-              {...producto}
-            />
+            (producto) => <div key={producto.id} className="col">
+              <Producto
+                {...producto}
+              />
+            </div>
           )
         }
       </div>

@@ -7,18 +7,18 @@ export default function Contador(props) {
     setContador(contador + 1);
   }
   function menos() {
-    setContador(contador - 1);
+    setContador(Math.max(contador - 1, 0));
   }
   return (
     <>
-      <div className="card row align-items-center w-100 p-2">
-        <div className='d-inline'>
-          <Boton clases="btn btn-primary"
+      <div className="row align-items-center justify-content-center w-100 p-2">
+        <div className='d-flex justify-content-center mb-3'>
+          <Boton clases="btn btn-danger botones-cuadrados"
             clickHandler={() => menos()}
             etiqueta="-"
           />
-          {contador}
-          <Boton clases="btn btn-primary"
+          <span className="mx-3 align-self-center fw-bold fs-5">{contador}</span>
+          <Boton clases="btn btn-success botones-cuadrados"
             clickHandler={() => mas()}
             etiqueta="+"
           />

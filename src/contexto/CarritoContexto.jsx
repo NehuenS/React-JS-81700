@@ -9,7 +9,9 @@ export function CarritoProvider({ children }) {
 
   function agregarACarrito(producto, cantidad) {
     const nuevoCarrito = structuredClone(carrito);
-    if (carrito.some(i => i.id === producto.id)) {
+    if (cantidad == 0) {
+      eliminarProducto(producto);
+    } else if (carrito.some(i => i.id === producto.id)) {
       nuevoCarrito.find(i => i.id === producto.id).cantidad = cantidad;
     } else {
       nuevoCarrito.push({ ...producto, cantidad: cantidad });
@@ -18,7 +20,7 @@ export function CarritoProvider({ children }) {
   }
 
   function eliminarProducto(producto) {
-    const nuevoCarrito = carrito.filter(i => i.id !== producto);
+    const nuevoCarrito = carrito.filter(i => i.id !== producto.id);
     setCarrito(nuevoCarrito);
   }
 

@@ -1,0 +1,37 @@
+.carrito-widget {
+    z-index: 1050
+}
+
+.carrito-widget-link {
+    width: 60px;
+    height: 60px;
+    font-Size: 1.5rem;
+    text-Decoration: none;
+    position: relative;
+}
+
+.carrito-widget-contador {
+    font-size: 0.75rem;
+    min-width: 25px;
+    min-height: 25px;
+    line-height: 25px;
+}
+
+.producto-card {
+    max-height: 600px;
+}
+
+.producto-foto {
+    object-fit: cover;
+    height: 300px;
+}
+
+.botones-cuadrados {
+    width: 50px;
+    height: 50px;
+}
+
+.producto-detalle-foto {
+    height: 500px;
+    object-fit: cover
+}
